@@ -1,0 +1,15 @@
+.navigation {
+  display: flex;
+  justify-content: end;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+.logo {
+  position: relative;
+  top: -20px;
+  right: -20px;
+}
