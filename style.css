@@ -1,10 +1,9 @@
 // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 100 to 900
 
-.raleway-<uniquifier > {
+.raleway-navigation {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
   font-style: normal;
 }
 
@@ -21,7 +20,11 @@ a {
 }
 
 a:hover {
-  background-color: grey;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 101, 252) 2.5px,
+    rgba(0, 101, 252, 0) 0%
+  );
 }
 
 .logo {
