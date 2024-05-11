@@ -27,8 +27,21 @@ a:hover {
   );
 }
 
+a:visited {
+  text-decoration: none;
+}
+
 .logo {
   position: relative;
   top: -20px;
   right: -20px;
+}
+
+body {
+  font-family: Raleway, sans-serif;
+}
+
+p {
+  margin-bottom: 30px;
+  font-size: medium;
 }
