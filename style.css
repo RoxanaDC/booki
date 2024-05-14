@@ -15,6 +15,7 @@ body {
 }
 
 .main-container {
+  background-color: aqua;
   width: 100%;
   max-width: 1440px;
   min-width: 320px;
@@ -163,19 +164,32 @@ p {
 /****** HEBERGEMENTS-POPULAIRES ***********/
 .sections-hebergements-plus-populaires {
   display: flex;
-  justify-content: center;
   flex-direction: row;
+  flex-wrap: wrap-reverse;
+  background-color: red;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: -50px;
+  margin-right: -50px;
+ justify-content: center;
+  height: auto;
+  
 }
 
 .section-hebergement-grey {
-  width: 67%;
+  
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
   background-color: lightgrey;
   border-radius: 20px;
   padding: 20px;
   margin: 10px;
+  maxa
 }
 
 .section-populaires-grey {
+  
   width: 30%;
   background-color: lightgrey;
   border-radius: 20px;
@@ -189,13 +203,18 @@ p {
 }
 
 .text-plus-rating {
+  background-color: pink;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  
 }
 
 .just-text-image {
+  background-color: yellow;
   display: flex;
   flex-direction: column;
+  margin-top: 3px;
 }
 
 .titre-image {
@@ -205,8 +224,8 @@ p {
 
 .ligne-prix {
   display: grid;
-  grid-template-columns: auto;
-  grid: gap 2px;
+  background-color: yellowgreen;
+  grid-template-columns: 55% 25% 15%;
 }
 .nuit-a-partir-de {
   font-size: small;
@@ -220,40 +239,63 @@ p {
 }
 
 .rating {
+  align-self:start;
   display: grid;
   grid-template-columns: repeat(5, 18px);
+  margin-top: 10px;
+}
+.card {
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 /****** HEBERGEMENTS ***********/
 
-.all-hebergement-cards {
-  display: grid;
+.container-all-hebergement-cards {
+  background-color: green;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  padding: 20px;
   margin: 10px;
   grid-gap: 30px;
+  max-width: 800px;
 }
 
 .card-hebergement {
-  display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  background-color: white;
-  width: 250px;
-  height: 200px;
-  border-radius: 20px;
-  padding: 15px;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  justify-content: center;
+
+  width: 200px;
+  height: 150px;
 }
 
-img {
-  height: 50px;
-  border-radius: 20px;
+.container-one-image-hebergement {
+  height: 60%;
+  background-size: 100% 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: -3px;
+  margin-top: -10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.container-one-image-hebergement img {
+  position: inherit;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
 }
 
 .afficher-plus {
-  align-self: end;
+  justify-content: start;
+  min-width: 300px;
 }
 
 /****** POPULAIRES ***********/
@@ -262,16 +304,39 @@ img {
   grid-template-rows: 5fr 1fr;
 }
 
-.all-populaires-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 3px;
+.container-all-populaires-cards {
+  background-color: chartreuse;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
 }
 .card-populaire {
-  background-color: white;
-  border-radius: 20px;
-  padding: 5px;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  /****** pour etre remplis ***********/
+  flex-direction: row;
+  justify-content: space-around;
+
+  width: 280px;
+  height: 120px;
+}
+
+.container-one-image-popûlaire {
+  height: 60%;
+  background-size: 100% 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: -3px;
+  margin-top: -10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.container-one-image-populaire img {
+  position: inherit;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
