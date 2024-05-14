@@ -1,46 +1,246 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <header>
-   
-    <nav>
-        <div class="navigation">
-            <a href="hebergements.html" class="link_nav">Hébergements</a>
-            <a href="activites.html" class="link_nav">Activités</a>
-        </div>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
-     
+        <title>Booki</title>
+        
+        <!-- La police demandé par le projet -->    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 
-    </nav>
-   <img class="logo" src="logo/Booki-1.png" alt="Logo">
+        <link rel="stylesheet" href="style.css">
+        
+        <!--  for Font Awesome icons in my HTML  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        
 
-  <head>
+    </head>
 
-    <! -- La police demandé par le projet -->    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <div class="main-container">
+            <header>
+                <nav>
+                    <div class="navigation">
+                        <a href="#" class="link-nav">Hébergements</a>
+                        <a href="#" class="link-nav">Activités</a>
+                    </div>
+                </nav>
+                    
+                <img class="logo" src="./images/logo/Booki.png" alt="Logo" height="20px">
+            </header>
+
+            <body>
+        
+                <h2>Trouver votre hebergement pour des vacances de rêve</h2>
+                <p>En plein centre-ville ou pleine nature</p>
+
+                <div class="research">
+                
+                    <label for="location-icon" class="location-icon"><i class="fas fa-map-marker-alt"></i></label>
+                    <div class="location-text"><input type="text" id="location-text" name="location" placeholder="    Marseille, France"></div>
+                    <a href="#">
+                    <button id="recherch-button-id" type="button">Rechercher</button>
+                    </a>
+                </div>
 
 
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Booki</title>
-  </head>
+            
+                <div class="filters">
+                <div class="text-filter">Filtres</div>
+                <a href="#"><div class="text-filter filter-element economique"><i class="fa-solid fa-money-bill-wave"></i>  Economique</div></a>
+                <a href="#"><div class="text-filter filter-element familial"><i class="fa-solid fa-person"></i></i>  Familial</div></a>
+                <a href="#"><div class="text-filter filter-element romantique"><i class="fa-solid fa-heart"></i>  Romantique</div></a>
+                <a href="#"><div class="text-filter filter-element nos-pepites"><i class="fa-solid fa-fire"></i></i>  Nos pepites</div></a>
+                
+                
+                
+                    
+                </div>
+                <br>
 
-  <body>
-    <h2>Trouver votre hebergement pour des vacances de rêve</h2>
-    <p>En plein centre-ville ou pleine nature</p>
+                <p>&#8505; Plus de 500 logements sont disponibles dans cette ville</p>
+                    <main>
+                        <div class="sections-hebergements-plus-populaires">            
+                            <div class ="section-hebergement-grey">
+                                <div class="titre-section">Hebergement a Marseille</div>
+                                <div class="all-hebergement-cards">
+                                    <a href="#">
+                                    <div class="card-hebergement">
+                                        <img src="./images/hebergements/annie-spratt.jpg" alt="annie-spratt">
+                                        <div class="text-plus-rating">
+                                            <div class="just-text-image">
+                                                <div class="titre-image">Hotel du port</div>
+                                                <div class="ligne-prix">
+                                                    <div class="nuit-a-partir-de">Nuit a partir de</div>
+                                                    <div class="variable-prix">1000</div>
+                                                    <div class="euro">€</div>
+                                                </div>
+                                            </div>
+                                            <div class ="rating">
+                                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                    </a>
+                                    <a href="#">
+                                        <div class="card-hebergement">
+                                            <img src="./images/hebergements/annie-spratt.jpg" alt="annie-spratt">
+                                            <div class="text-plus-rating">
+                                                <div class="just-text-image">
+                                                    <div class="titre-image">Hotel du port</div>
+                                                    <div class="ligne-prix">
+                                                        <div class="nuit-a-partir-de">Nuit a partir de</div>
+                                                        <div class="variable-prix">1000</div>
+                                                        <div class="euro">€</div>
+                                                    </div>
+                                                </div>
+                                                <div class ="rating">
+                                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                        </a>
+                                        <a href="#">
+                                            <div class="card-hebergement">
+                                                <img src="./images/hebergements/annie-spratt.jpg" alt="annie-spratt">
+                                                <div class="text-plus-rating">
+                                                    <div class="just-text-image">
+                                                        <div class="titre-image">Hotel du port</div>
+                                                        <div class="ligne-prix">
+                                                            <div class="nuit-a-partir-de">Nuit a partir de</div>
+                                                            <div class="variable-prix">1000</div>
+                                                            <div class="euro">€</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class ="rating">
+                                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                            </a>
+                                            <a href="#">
+                                                <div class="card-hebergement">
+                                                    <img src="./images/hebergements/annie-spratt.jpg" alt="annie-spratt">
+                                                    <div class="text-plus-rating">
+                                                        <div class="just-text-image">
+                                                            <div class="titre-image">Hotel du port</div>
+                                                            <div class="ligne-prix">
+                                                                <div class="nuit-a-partir-de">Nuit a partir de</div>
+                                                                <div class="variable-prix">1000</div>
+                                                                <div class="euro">€</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class ="rating">
+                                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                            <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>    
+                                                </a>
+                                                <a href="#">
+                                                    <div class="card-hebergement">
+                                                        <img src="./images/hebergements/annie-spratt.jpg" alt="annie-spratt">
+                                                        <div class="text-plus-rating">
+                                                            <div class="just-text-image">
+                                                                <div class="titre-image">Hotel du port</div>
+                                                                <div class="ligne-prix">
+                                                                    <div class="nuit-a-partir-de">Nuit a partir de</div>
+                                                                    <div class="variable-prix">1000</div>
+                                                                    <div class="euro">€</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class ="rating">
+                                                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                                <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>    
+                                                    </a>
+                                                    <a href="#">
+                                                        <div class="card-hebergement">
+                                                            <img src="./images/hebergements/annie-spratt.jpg" alt="annie-spratt">
+                                                            <div class="text-plus-rating">
+                                                                <div class="just-text-image">
+                                                                    <div class="titre-image">Hotel du port</div>
+                                                                    <div class="ligne-prix">
+                                                                        <div class="nuit-a-partir-de">Nuit a partir de</div>
+                                                                        <div class="variable-prix">1000</div>
+                                                                        <div class="euro">€</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class ="rating">
+                                                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>    
+                                                        </a>
+                                    <div class="afficher-plus"><h3>Afficher plus</h3></div>
+                                </div>   
+                                
+                            </div>            
 
-    <img src="Responsive=Desktop-1.png"></img>
 
+                            <div class ="section-populaires-grey">
+                                <div class="titre-section-plus--icon-graph">
+                                    <div class="titre-section">Les plus populaires</div>
+                                    <i>icon graphique</i>
+                                </div>    
+                                <div class="all-populaires-cards">
+                                    <a href="#">
+                                    <div class="card-populaire">
+                                        <img src="./images/hebergements/annie-spratt.jpg" alt="annie-spratt">
+                                        <div class="text-plus-rating">
+                                            <div class="just-text-image">
+                                                <div class="titre-image">Hotel le soleil du matin</div>
+                                                <div class="ligne-prix">
+                                                    <div class="nuit-a-partir-de">Nuit a partir de</div>
+                                                    <div class="variable-prix">1000</div>
+                                                    <div class="euro">€</div>
+                                                </div>
+                                            </div>
+                                            <div class ="rating">
+                                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                            
+                                            </div>
+                                        </div>
+                                    </div>  
+                                    </a>  
+                                </div>   
+                            </div> 
+                        </div>
 
-
-    <h3>Filtres</h3>
-    <img src="Filter.png"></img>
-    <br>
-
-    <p>&#8505; Plus de 500 logements sont disponibles dans cette ville</p>
-
-  </body>
+                        
+                    </main>
+            </body>
+        </div>  <!--  the "/div" of div "main-container" -->
 </html>
