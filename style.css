@@ -4,6 +4,10 @@
 }
 
 :root {
+  /*   --main-color: red;
+  --main-bg-color: green;
+  --filter-bg-color: pink; */
+
   --main-color: #0065fc;
   --main-bg-color: #f2f2f2;
   --filter-bg-color: #deebff;
@@ -15,7 +19,7 @@ body {
 }
 
 .main-container {
-  background-color: aqua;
+  /* background-color: aqua; */
   width: 100%;
   max-width: 1440px;
   min-width: 320px;
@@ -24,7 +28,7 @@ body {
 }
 
 a {
-  color: inherit;
+  color: black;
   text-decoration: none;
 }
 
@@ -65,14 +69,14 @@ p {
 .link-nav {
   text-decoration: none;
   padding: 10px;
-  color: #0065fc;
+  color: var(--main-color);
 }
 
 .link-nav:hover {
   background-image: linear-gradient(
     to bottom,
-    rgb(0, 101, 252) 2.5px,
-    rgba(0, 101, 252, 0) 0%
+    var(--main-color) 2.5px,
+    white 0%
   );
 }
 
@@ -81,38 +85,35 @@ p {
 }
 
 /****** RECHERCHER ***********/
-form{
+form {
   display: flex;
   flex-direction: row;
 }
 
-
 .research {
-  display:flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   width: auto;
   height: 100;
-  font-size: large;
+  font-size: small;
 }
 
 form input,
 form select,
 form textarea,
-form button 
-form label{
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    vertical-align: middle;
-    width: 100%;
-    box-sizing: border-box; 
+form button form label {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-
 .location-icon-ville {
-  background-color: lightgray;
+  background-color: var(--main-bg-color);
   font-size: large;
   margin: 0px;
   box-sizing: border-box;
@@ -134,8 +135,8 @@ form label{
   color: black;
   margin: 0px;
   padding: 0px;
-  border-top-color: lightgray;
-  border-bottom-color: lightgray;
+  border-top-color: var(--main-bg-color);
+  border-bottom-color: var(--main-bg-color);
   border-top-width: 1px;
   border-bottom-width: 1px;
   border-left-width: 0px;
@@ -143,18 +144,19 @@ form label{
 }
 
 #recherch-button-id {
-  width: 300px;
+  width: 200px;
   height: 60px;
   box-sizing: border-box;
-  font-size: x-large;
-  background-color: blue;
-  color: white;
+  font-size: large;
+  background-color: var(--main-color);
+  color: var(--main-bg-color);
   font-weight: bold;
   margin: 0px;
   padding: 0px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   border: 0;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 /****** FILTRES ***********/
@@ -170,19 +172,18 @@ form label{
 .filter-element {
   border-width: 2px;
   border-style: solid;
-  border-color: grey;
+  border-color: var(--main-bg-color);
   padding: 12px;
   margin: 20px;
   border-radius: 50px;
 }
 
 .text-filter {
-  
   font-weight: bold;
   font-size: larger;
 }
-.text-filter:hover{
-  background-color: red;
+.text-filter:hover {
+  background-color: var(--filter-bg-color);
 }
 
 /****** HEBERGEMENTS-POPULAIRES ***********/
@@ -190,32 +191,28 @@ form label{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
-  background-color: red;
+  /*background-color: red;*/
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: -50px;
   margin-right: -50px;
- justify-content: center;
+  justify-content: center;
   height: auto;
-  
 }
 
 .section-hebergement-grey {
-  
   display: flex;
   flex-wrap: wrap;
   width: 60%;
-  background-color: lightgrey;
+  background-color: var(--main-bg-color);
   border-radius: 20px;
   padding: 20px;
   margin: 10px;
-  maxa
 }
 
 .section-populaires-grey {
-  
   width: 30%;
-  background-color: lightgrey;
+  background-color: var(--main-bg-color);
   border-radius: 20px;
   padding: 20px;
   margin: 10px;
@@ -227,20 +224,19 @@ form label{
 }
 
 .text-plus-rating {
-  background-color: pink;
+  /*background-color: pink;*/
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   font-size: medium;
   padding-left: 7px;
-  
 }
 
 .just-text-image {
-  background-color: yellow;
+  /* background-color: yellow; */
   display: flex;
   flex-direction: column;
-  margin-top: 3px ;
+  margin-top: 3px;
 }
 
 .titre-image {
@@ -250,7 +246,7 @@ form label{
 
 .ligne-prix {
   display: grid;
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
   grid-template-columns: 55% 25% 15%;
 }
 .nuit-a-partir-de {
@@ -265,11 +261,10 @@ form label{
 }
 
 .rating {
-  align-self:start;
+  align-self: start;
   display: grid;
   grid-template-columns: repeat(5, 18px);
   margin-top: 10px;
- 
 }
 .card {
   display: flex;
@@ -282,7 +277,7 @@ form label{
 /****** HEBERGEMENTS ***********/
 
 .container-all-hebergement-cards {
-  background-color: green;
+  /* background-color: green; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -307,7 +302,7 @@ form label{
   border-top-right-radius: 10px;
   margin: 2px;
   margin-top: -3px;
- 
+
   overflow: hidden;
   position: relative;
 }
@@ -333,7 +328,7 @@ form label{
 }
 
 .container-all-populaires-cards {
-  background-color: chartreuse;
+  /* background-color: chartreuse; */
   display: flex;
   flex-direction: column;
   min-width: 300px;
