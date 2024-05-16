@@ -25,7 +25,7 @@
             <header>
                 <nav>
                     <div class="navigation">
-                        <a href="#" class="link-nav">Hébergements</a>
+                        <a href="#section-hebergement-grey" class="link-nav">Hébergements</a>
                         <a href="#" class="link-nav">Activités</a>
                     </div>
                 </nav>
@@ -39,9 +39,15 @@
                 <p>En plein centre-ville ou pleine nature</p>
 
                 <div class="research">
-                
-                    <label for="location-icon" class="location-icon"><i class="fas fa-map-marker-alt"></i></label>
-                    <div class="location-text"><input type="text" id="location-text" name="location" placeholder="    Marseille, France"></div>
+                    <!--FORM-->
+                <form id="location" action="" method="get">
+                        <label for="location-icon-ville" class="location-icon-ville">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </label>
+                        <div class="location-text">
+
+                        <input type="text" id="location-icon-ville" name="location-text" value="    Marseille, France"></div>
+                </form>
                     <a href="#">
                     <button id="recherch-button-id" type="button">Rechercher</button>
                     </a>
@@ -65,7 +71,7 @@
                 <p>&#8505; Plus de 500 logements sont disponibles dans cette ville</p>
                     <main>
                         <div class="sections-hebergements-plus-populaires">            
-                            <div class ="section-hebergement-grey">
+                            <div class ="section-hebergement-grey" id="section-hebergement-grey">
                                 <div class="titre-section">Hebergement a Marseille</div>
                                 <div class="container-all-hebergement-cards">
                                     <a href="#">
