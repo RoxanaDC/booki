@@ -4,10 +4,6 @@
 }
 
 :root {
-  /*   --main-color: red;
-  --main-bg-color: green;
-  --filter-bg-color: pink; */
-
   --main-color: #0065fc;
   --main-bg-color: #f2f2f2;
   --filter-bg-color: #deebff;
@@ -19,7 +15,6 @@ body {
 }
 
 .main-container {
-  /* background-color: aqua; */
   width: 100%;
   max-width: 1440px;
   min-width: 320px;
@@ -191,7 +186,6 @@ form button form label {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
-  /*background-color: red;*/
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: -50px;
@@ -224,7 +218,6 @@ form button form label {
 }
 
 .text-plus-rating {
-  /*background-color: pink;*/
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -233,7 +226,6 @@ form button form label {
 }
 
 .just-text-image {
-  /* background-color: yellow; */
   display: flex;
   flex-direction: column;
   margin-top: 3px;
@@ -246,7 +238,7 @@ form button form label {
 
 .ligne-prix {
   display: grid;
-  /* background-color: yellowgreen; */
+
   grid-template-columns: 55% 25% 15%;
 }
 .nuit-a-partir-de {
@@ -277,7 +269,6 @@ form button form label {
 /****** HEBERGEMENTS ***********/
 
 .container-all-hebergement-cards {
-  /* background-color: green; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -328,7 +319,6 @@ form button form label {
 }
 
 .container-all-populaires-cards {
-  /* background-color: chartreuse; */
   display: flex;
   flex-direction: column;
   min-width: 300px;
@@ -366,7 +356,8 @@ form button form label {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-/* @media (max-width: 1024px) {
+
+@media (max-width: 1024px) {
   .hebergements-and-populaires {
     flex-direction: column;
   }
@@ -400,5 +391,6 @@ form button form label {
 }
 
 /* Small devices (phones, less than 768px) */
-/* @media (max-width: 767.98px) {
-  /* ... */
+@media (max-width: 767.98px) {
+}
+/* ... */
