@@ -80,6 +80,21 @@ p {
 }
 
 /****** RECHERCHER ***********/
+
+.mobile-icon {
+  display: none;
+}
+
+/* Afiseaza iconita si ascunde textul pentru ecranele mici */
+@media screen and (max-width: 768px) {
+  .desktop-text {
+    display: none;
+  }
+  .mobile-icon {
+    display: inline-block;
+  }
+}
+
 form {
   display: flex;
   flex-direction: row;
@@ -139,7 +154,7 @@ form button form label {
 }
 
 #recherch-button-id {
-  width: 200px;
+  width: auto;
   height: 60px;
   box-sizing: border-box;
   font-size: large;
@@ -147,7 +162,7 @@ form button form label {
   color: var(--main-bg-color);
   font-weight: bold;
   margin: 0px;
-  padding: 0px;
+  padding: 15px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   border: 0;
