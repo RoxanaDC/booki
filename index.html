@@ -35,7 +35,7 @@
 
             <body>
         
-                <h2>Trouver votre hebergement pour des vacances de rêve</h2>
+                <h2>Trouver votre hébergement pour des vacances de rêve</h2>
                 <p>En plein centre-ville ou pleine nature</p>
 
 
@@ -55,31 +55,35 @@
                             <input type="text" id="location-icon-ville" name="location-text" value="    Marseille, France"></div>
                     </form>
                         <button type="submit" id="recherch-button-id">
-                                <span class="desktop-text">Rechercher</span>
-                                <span class="mobile-icon">&#128270;</span>
+                                <span class="desktop-text-research">Rechercher</span>
+                                <span class="mobile-icon-research">&#128270;</span>
+                                <!--<span class="mobile-icon-research"><img src="Button.png" id="lupa">;</span>-->
                         </button>
                 </div>
 
 
             
                 <div class="filters">
-                <div class="text-filter">Filtres</div>
-                <a href="#"><div class="text-filter filter-element economique"><i class="fa-solid fa-money-bill-wave"></i>  Economique</div></a>
-                <a href="#"><div class="text-filter filter-element familial"><i class="fa-solid fa-person"></i></i>  Familial</div></a>
-                <a href="#"><div class="text-filter filter-element romantique"><i class="fa-solid fa-heart"></i>  Romantique</div></a>
-                <a href="#"><div class="text-filter filter-element nos-pepites"><i class="fa-solid fa-fire"></i></i>  Nos pepites</div></a>
+                <h3>Filtres</h3>
+                <a href="#"><div class="text-filter filter-element economique"><i class="fa-solid fa-money-bill-wave"></i>Économique</div></a>
+                <a href="#"><div class="text-filter filter-element familial"><i class="fa-solid fa-person"></i></i>Familial</div></a>
+                <a href="#"><div class="text-filter filter-element romantique"><i class="fa-solid fa-heart"></i>Romantique</div></a>
+                <a href="#"><div class="text-filter filter-element nos-pepites"><i class="fa-solid fa-fire"></i></i>Nos pépites</div></a>
                 
                 
                 
                     
                 </div>
                 <br>
-
-                <p>&#8505; Plus de 500 logements sont disponibles dans cette ville</p>
+                <div class="i_plus_text">
+                    <div id="cercle_around_i">i</div>
+                    <div id="plus_de_500">Plus de 500 logements sont disponibles dans cette ville</div>
+                </div>
                     <main>
                         <div class="sections-hebergements-plus-populaires">            
                             <div class ="section-hebergement-grey" id="section-hebergement-grey">
-                                <div class="titre-section">Hebergement a Marseille</div>
+                                
+                                <div class="titre-section">Hébergements à Marseille</div>
                                 <div class="container-all-hebergement-cards">
                                     <a href="#">
                                     <div class="card-hebergement card">
@@ -91,7 +95,7 @@
                                             <div class="just-text-image">
                                                 <div class="titre-image">Hotel du port</div>
                                                 <div class="ligne-prix">
-                                                    <div class="nuit-a-partir-de">Nuit a partir de</div>
+                                                    <div class="nuit-a-partir-de">Nuit à partir de</div>
                                                     <div class="variable-prix">1000</div>
                                                     <div class="euro">€</div>
                                                 </div>
@@ -116,7 +120,7 @@
                                                 <div class="just-text-image">
                                                     <div class="titre-image">Hotel du port</div>
                                                     <div class="ligne-prix">
-                                                        <div class="nuit-a-partir-de">Nuit a partir de</div>
+                                                        <div class="nuit-a-partir-de">Nuit à partir de</div>
                                                         <div class="variable-prix">1000</div>
                                                         <div class="euro">€</div>
                                                     </div>
@@ -141,7 +145,7 @@
                                                     <div class="just-text-image">
                                                         <div class="titre-image">Hotel du port</div>
                                                         <div class="ligne-prix">
-                                                            <div class="nuit-a-partir-de">Nuit a partir de</div>
+                                                            <div class="nuit-a-partir-de">Nuit à partir de</div>
                                                             <div class="variable-prix">1000</div>
                                                             <div class="euro">€</div>
                                                         </div>
@@ -166,7 +170,7 @@
                                                         <div class="just-text-image">
                                                             <div class="titre-image">Hotel du port</div>
                                                             <div class="ligne-prix">
-                                                                <div class="nuit-a-partir-de">Nuit a partir de</div>
+                                                                <div class="nuit-a-partir-de">Nuit à partir de</div>
                                                                 <div class="variable-prix">1000</div>
                                                                 <div class="euro">€</div>
                                                             </div>
@@ -191,7 +195,7 @@
                                                             <div class="just-text-image">
                                                                 <div class="titre-image">Hotel du port</div>
                                                                 <div class="ligne-prix">
-                                                                    <div class="nuit-a-partir-de">Nuit a partir de</div>
+                                                                    <div class="nuit-a-partir-de">Nuit à partir de</div>
                                                                     <div class="variable-prix">1000</div>
                                                                     <div class="euro">€</div>
                                                                 </div>
@@ -216,7 +220,7 @@
                                                                 <div class="just-text-image">
                                                                     <div class="titre-image">Hotel du port</div>
                                                                     <div class="ligne-prix">
-                                                                        <div class="nuit-a-partir-de">Nuit a partir de</div>
+                                                                        <div class="nuit-a-partir-de">Nuit à partir de</div>
                                                                         <div class="variable-prix">1000</div>
                                                                         <div class="euro">€</div>
                                                                     </div>
@@ -238,9 +242,9 @@
 
 
                             <div class ="section-populaires-grey">
-                                <div class="titre-section-plus--icon-graph">
-                                    <div class="titre-section">Les plus populaires</div>
-                                    <i>icon graphique</i>
+                                <div class="titre-section-plus-icon-graph">
+                                    <div class="titre-section">Les plus populaires          </div>
+                                    <i class="fa-solid fa-chart-line" id="graph-icon"></i>
                                 </div>    
                                 <div class="container-all-populaires-cards">
                                     <a href="#">
@@ -253,7 +257,7 @@
                                             <div class="just-text-image">
                                                 <div class="titre-image">Hotel le soleil du matin</div>
                                                 <div class="ligne-prix">
-                                                    <div class="nuit-a-partir-de">Nuit a partir de</div>
+                                                    <div class="nuit-a-partir-de">Nuit à partir de</div>
                                                     <div class="variable-prix">1000</div>
                                                     <div class="euro">€</div>
                                                 </div>
@@ -269,12 +273,142 @@
                                         </div>
                                     </div>  
                                     </a>  
+
+                                    <a href="#">
+                                        <div class="card-populaire card">
+                                            <div class="container-one-image-populaire">
+                                                <img src="./images/hebergements/annie-spratt.jpg" alt="annie-spratt">
+                                            </div>
+                                            
+                                            <div class="text-plus-rating">
+                                                <div class="just-text-image">
+                                                    <div class="titre-image">Hotel le soleil du matin</div>
+                                                    <div class="ligne-prix">
+                                                        <div class="nuit-a-partir-de">Nuit à partir de</div>
+                                                        <div class="variable-prix">1000</div>
+                                                        <div class="euro">€</div>
+                                                    </div>
+                                                </div>
+                                                <div class ="rating">
+                                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                                
+                                                </div>
+                                            </div>
+                                        </div>  
+                                        </a>  
+
+                                        <a href="#">
+                                            <div class="card-populaire card">
+                                                <div class="container-one-image-populaire">
+                                                    <img src="./images/hebergements/annie-spratt.jpg" alt="annie-spratt">
+                                                </div>
+                                                
+                                                <div class="text-plus-rating">
+                                                    <div class="just-text-image">
+                                                        <div class="titre-image">Hotel le soleil du matin</div>
+                                                        <div class="ligne-prix">
+                                                            <div class="nuit-a-partir-de">Nuit à partir de</div>
+                                                            <div class="variable-prix">1000</div>
+                                                            <div class="euro">€</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class ="rating">
+                                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                                    
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                            </a>  
                                 </div>   
                             </div> 
                         </div>
+                        <br><br>
+                        <div class="titre-section">Activités à Marseille</div>
+                        <br>
+                        <div class ="section-activites-blanc" id="section-acvitites-blanc">
+                            <div class="titre-section"> Activités à Marseille</div>
+                                <div class="container-all-activites-cards">
+                                    <a href="#">
+                                    <div class="card-activite card">
+                                        <div class="container-one-image-activite">
+                                            <img src="./images/hebergements/annie-spratt.jpg" alt="annie-spratt">
+                                        </div>
+                                        <div class="titre-image">Hotel du port</div>
+                                        
+                                        
+                                    </div>    
+                                    </a>
 
+                                    <a href="#">
+                                        <div class="card-activite card">
+                                            <div class="container-one-image-activite">
+                                                <img src="./images/hebergements/annie-spratt.jpg" alt="annie-spratt">
+                                            </div>
+                                            <div class="titre-image">Hotel du port</div>
+                                            
+                                            
+                                        </div>    
+                                        </a>
+
+                                        <a href="#">
+                                            <div class="card-activite card">
+                                                <div class="container-one-image-activite">
+                                                    <img src="./images/hebergements/annie-spratt.jpg" alt="annie-spratt">
+                                                </div>
+                                                <div class="titre-image">Hotel du port</div>
+                                                
+                                                
+                                            </div>    
+                                            </a>
+
+                                            <a href="#">
+                                                <div class="card-activite card">
+                                                    <div class="container-one-image-activite">
+                                                        <img src="./images/hebergements/annie-spratt.jpg" alt="annie-spratt">
+                                                    </div>
+                                                    <div class="titre-image">Hotel du port</div>
+                                                    
+                                                    
+                                                </div>    
+                                                </a>
+                                    
+                  
                         
                     </main>
-            </body>
-        </div>  <!--  the "/div" of div "main-container" -->
+<br><br>
+
+<footer>
+           <div class="all-footer-blocks">
+                <div class="a-propos footer-block">
+                    <a href="#" class="footer-titre-link footer-text">À propos</a>
+                    <a href="#" class="footer-simple-link footer-text">Fonctionnement du site</a>
+                    <a href="#" class="footer-simple-link footer-text">Conditions générales</a>
+                    <a href="#" class="footer-simple-link footer-text">Données et confidentialité</a>
+                </div>
+                <div class="nos-hebergements footer-block">
+                    <a href="#" class="footer-titre-link footer-text">Nos hébergements</a>
+                    <a href="#" class="footer-simple-link footer-text">Charte qualité</a>
+                    <a href="#" class="footer-simple-link footer-text">Proposer vôtre hôtel</a>
+                </div>
+                <div class="assistence footer-block">
+                    <a href="#" class="footer-titre-link footer-text">Assistance</a>
+                    <a href="#" class="footer-simple-link footer-text">Centre d'aide</a>
+                    <a href="#" class="footer-simple-link footer-text">Nous contacter</a>
+                </div>    
+            </div>
+      
+</footer>
+
+</body>
+            
+</div>  <!--  the "/div" of div "main-container" -->
+
 </html>
