@@ -40,6 +40,7 @@ p {
 .titre-section {
   font-size: larger;
   font-weight: bold;
+  margin-bottom: 3px;
 }
 .fa-solid {
   color: var(--main-color);
@@ -109,7 +110,7 @@ form {
 .research {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   width: auto;
   height: 100;
@@ -131,7 +132,7 @@ form button form label {
 .location-icon-ville {
   border: 1px solid var(--main-bg-color);
   background-color: var(--main-bg-color);
-  font-size: large;
+  font-size: medium;
   margin: 0px;
   box-sizing: border-box;
   align-items: center;
@@ -146,7 +147,7 @@ form button form label {
   height: 50px;
   box-sizing: border-box;
   border: 1px solid var(--main-bg-color);
-  width: 200px;
+  width: 250px;
   font-size: large;
   font-weight: bold;
   justify-content: center;
@@ -249,6 +250,10 @@ form button form label {
   min-width: 320px;
 }
 
+.titre-section-hebergements {
+  padding-left: 40px;
+}
+
 .section-hebergement-grey {
   display: flex;
   flex-wrap: wrap;
@@ -279,7 +284,7 @@ form button form label {
   flex-direction: column;
   justify-content: space-around;
   font-size: small;
-  padding-left: 7px;
+  padding-left: 10px;
 }
 
 .just-text-image {
@@ -296,7 +301,7 @@ form button form label {
 .ligne-prix {
   display: grid;
 
-  grid-template-columns: 55% 25% 15%;
+  grid-template-columns: 100%;
 }
 .nuit-a-partir-de {
   font-size: small;
@@ -321,7 +326,10 @@ form button form label {
 
   background-color: white;
   border-radius: 20px;
-  padding: 5px;
+
+  padding-right: 4px;
+  padding-left: 4px;
+  padding-bottom: 5px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -340,7 +348,7 @@ form button form label {
 .card-hebergement {
   flex-direction: column;
   justify-content: center;
-
+  padding-top: 0px;
   min-width: 220px;
   height: 190px;
 }
@@ -354,8 +362,8 @@ form button form label {
   background-size: 100% 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  margin: 2px;
-  margin-top: -15px;
+  margin: 0px;
+  margin-top: 0px;
   position: relative;
 }
 
@@ -367,16 +375,20 @@ form button form label {
   transform: translate(0%, 0%);
   width: 100%;
   height: 100%;
-  margin-top: -6px;
+  margin-top: -10px;
 }
 
 .afficher-plus {
   justify-content: start;
   min-width: 300px;
+  padding-left: 40px;
 }
 
 /****** POPULAIRES ***********/
+
 .titre-section-plus-icon-graph {
+  display: flex;
+  flex-direction: row;
   min-width: 320px;
   display: grid;
   grid-template-columns: 5fr 1fr;
@@ -388,6 +400,10 @@ form button form label {
   grid-column: 2;
   justify-self: end;
   align-items: end;
+}
+.titre-section-les-populaires {
+  align-self: start;
+  margin-right: 150px;
 }
 
 .container-all-populaires-cards {
@@ -402,6 +418,9 @@ form button form label {
   min-width: 320px;
   height: 140px;
   margin-bottom: 20px;
+  padding-top: 4x;
+  padding-bottom: 8px;
+
   /*   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -409,19 +428,6 @@ form button form label {
   width: 370px;
   height: 140px;
   margin-bottom: 20px; */
-}
-
-.container-one-image-popûlaire {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  width: 30%;
-  background-size: 100% 100%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  margin: -3px;
-  margin-top: -10px;
-  position: relative;
 }
 
 .container-one-image-populaire img {
@@ -433,11 +439,13 @@ form button form label {
   width: 100%;
   height: 100%;
   margin-left: 0px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-top: 0px;
 }
 
 /*------------ACTIVITES-----------*/
 .section-activites-blanc {
-  background-color: red;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
@@ -451,6 +459,9 @@ form button form label {
   min-width: 320px;
 }
 
+.titre-section-activites {
+  padding-left: 60px;
+}
 .container-all-activites-cards {
   display: flex;
   flex-wrap: wrap;
@@ -463,7 +474,7 @@ form button form label {
 .card-activite {
   flex-direction: column;
   justify-content: top;
-  width: 270px;
+  width: 275px;
   min-width: 220px;
   height: 390px;
 }
@@ -495,9 +506,14 @@ form button form label {
   padding-right: -10px;
 }
 
+.titre-image-activites {
+  padding: 10px;
+}
 footer {
   background-color: var(--main-bg-color);
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
   min-width: 320px;
 }
 .all-footer-blocks {
@@ -505,12 +521,13 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 900px;
 }
 
-.all-footer > div {
+/* .all-footer-blocks > div {
   flex: 1;
-  margin: 0 10 px;
-}
+  margin: 0 10px;
+} */
 .footer-titre-link {
   font-weight: bold;
   font-size: large;
@@ -519,7 +536,12 @@ footer {
 .footer-block {
   display: flex;
   flex-direction: column;
-  gap: 13px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-text {
+  margin-bottom: 0px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
