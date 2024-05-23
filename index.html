@@ -20,8 +20,7 @@
         
 
     </head>
-
-        <div class="main-container">
+       <div class="main-container">
             <header>
                 <nav>
                     <div class="navigation">
@@ -29,8 +28,9 @@
                         <a href="#" class="link-nav">Activités</a>
                     </div>
                 </nav>
-                    
-                <img class="logo" src="./images/logo/Booki.png" alt="Logo" height="20px">
+                <div class="logo_div">
+                    <img class="logo" id="logo" src="./images/logo/Booki.png" alt="Logo" height="20px">
+                </div>
             </header>
 
             <body>
@@ -51,14 +51,26 @@
                                 <i class="fas fa-map-marker-alt"></i>
                             </label>
                             <div class="location-text">
-
                             <input type="text" id="location-icon-ville" name="location-text" value="    Marseille, France"></div>
-                    </form>
+                    
                         <button type="submit" id="recherch-button-id">
-                                <span class="desktop-text-research">Rechercher</span>
-                                <span class="mobile-icon-research">&#128270;</span>
-                                <!--<span class="mobile-icon-research"><img src="Button.png" id="lupa">;</span>-->
+                                <a href="#"><span class="desktop-text-research">Rechercher</span></a>
                         </button>
+                    </form>
+                        <!--FORM 2--> 
+                    <form id="location2" action="" method="get">
+                        <label for="location-icon-ville" class="location-icon-ville">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </label>
+                        <div class="location-text">
+
+                        <input type="text" id="location-icon-ville" name="location-text" value="    Marseille, France"></div>
+                
+                    <a href="#"> <img src="Button.png" id="lupa"></span></a>
+                            
+                    </button>
+                    </form>
+
                 </div>
 
 
@@ -304,7 +316,7 @@
                                         <a href="#">
                                             <div class="card-populaire card">
                                                 <div class="container-one-image-populaire">
-                                                    <img src="./images/hebergements/emile-guillemot.jpg" alt="emile-guillemot">
+                                                    <img src="./images/hebergements/marcus-loke.jpg" alt="Hotel Bleu et Blanc">
                                                 </div>
                                                 
                                                 <div class="text-plus-rating">
@@ -398,7 +410,7 @@
                     <a href="#" class="footer-simple-link footer-text">Charte qualité</a>
                     <a href="#" class="footer-simple-link footer-text">Proposer vôtre hôtel</a>
                 </div>
-                <div class="assistence footer-block">
+                <div class="assistance footer-block">
                     <h3 class="footer-titre-link footer-text">Assistance</h3>
                     <a href="#" class="footer-simple-link footer-text">Centre d'aide</a>
                     <a href="#" class="footer-simple-link footer-text">Nous contacter</a>
