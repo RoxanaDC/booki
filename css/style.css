@@ -5,10 +5,6 @@
 *********************************
 *********************************/
 
-/*{
-  justify-content: center;
-} */
-
 header,
 footer,
 main .navigation {
@@ -224,6 +220,7 @@ form button form label {
 
   box-sizing: border-box;
 }
+
 .all-bouttons-filter {
   display: flex;
   flex-direction: row;
@@ -231,6 +228,7 @@ form button form label {
   justify-content: start;
   align-items: center;
 }
+
 .filter-element {
   border: 3px solid var(--main-bg-color);
   border-style: solid;
@@ -268,6 +266,7 @@ form button form label {
   width: 450px;
   height: 40px;
 }
+
 #cercle_around_i {
   color: var(--main-color);
   display: flex;
@@ -408,12 +407,12 @@ form button form label {
 }
 
 .container-all-hebergement-cards > * {
-  flex-grow: 1;
+  flex: 1 1 0;
 }
 
 .card-hebergement {
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   padding-top: 0px;
   width: 100%;
   height: 100%;
@@ -423,27 +422,26 @@ form button form label {
 }
 
 .container-one-image-hebergement {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  align-items: start;
+  justify-content: start;
   width: 100%;
-  height: 60%;
+  height: 68%;
   background-size: 100% 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
   position: relative;
   margin: 0px;
+  margin-top: 4px;
 }
 
 .container-one-image-hebergement img {
   position: absolute;
   object-fit: cover;
+  overflow: hidden;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   transform: translate(0%, 0%);
   width: 100%;
   height: 100%;
-  margin-top: 0px;
+  margin: 0;
   padding: 0;
 }
 
@@ -492,8 +490,7 @@ form button form label {
   flex-direction: column;
 }
 .container-all-populaires-cards > * {
-  flex-grow: 1;
-  margin: 0;
+  flex: 1 1 0;
 }
 
 .card-populaire {
@@ -542,18 +539,39 @@ form button form label {
   justify-content: start;
   align-items: start;
   height: auto;
+  max-width: 1440px;
+  min-width: 320px;
 }
 
 .titre-section-activites {
   padding-left: 25px;
   margin-bottom: 20px;
 }
+
+.card-activite {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: top;
+  background-color: white;
+  border-radius: 20px;
+  width: 20vw;
+  max-width: 340px;
+  min-width: 210px;
+  height: 360px;
+  padding: 0;
+  margin-top: 0px;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
 .container-all-activites-cards {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: start;
-  padding: 1%;
+  align-items: start;
+  padding: 5px;
   margin-top: 50px;
   margin: 0px;
   gap: 20px;
@@ -561,24 +579,7 @@ form button form label {
 }
 
 .container-all-activites-cards > * {
-  flex-grow: 1;
-  flex-shrink: 1;
-}
-
-.card-activite {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-content: top;
-
-  background-color: white;
-  border-radius: 20px;
-  width: 220px;
-  height: 340px;
-  padding: 0;
-  margin-top: 0px;
-
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  flex: 1 1 0;
 }
 
 .container-one-image-activite {
@@ -593,17 +594,12 @@ form button form label {
   margin: 0;
   padding: 0;
   position: relative;
-  margin-top: -7px;
-}
-
-.container-all-activites-cards > * {
-  flex-grow: 1;
-  margin: 0;
 }
 
 .container-one-image-activite img {
   position: absolute;
   object-fit: cover;
+  overflow: hidden;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   transform: translate(0%, 0%);
@@ -630,6 +626,7 @@ footer {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
+  padding-bottom: 1000px;
 }
 .all-footer-blocks {
   display: flex;
@@ -798,7 +795,6 @@ footer {
   }
 
   .container-all-hebergement-cards {
-    background-color: green;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -840,6 +836,7 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+    justify-content: center;
     gap: 5px;
     width: 92%;
     position: relative;
@@ -848,7 +845,6 @@ footer {
   }
 
   .container-all-populaires-cards {
-    background-color: red;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -864,6 +860,7 @@ footer {
 
   .container-all-populaires-cards > * {
     flex: 1 1 0;
+
     /*each child element grow_shrink equally,
     the initial size is considered to be 0.
     */
@@ -895,6 +892,7 @@ footer {
     flex-wrap: nowrap;
     justify-content: space-between;
     margin-top: 30px;
+    margin-left: 20px;
     gap: 5px;
   }
 
@@ -906,9 +904,6 @@ footer {
     margin: 0;
   }
 
-  .container-all-activites-cards {
-    margin-top: 5px;
-  }
   /************ FOOTER ********
 *********************************
 *********************************
@@ -922,6 +917,7 @@ footer {
     flex-wrap: nowrap;
     width: 100%;
     font-size: 0.8em;
+    padding-bottom: 1000px;
   }
 }
 /************ RESPONSIVE ********
@@ -1088,7 +1084,6 @@ footer {
     justify-content: start;
     width: 100%;
     margin-top: 0px;
-    /* margin-left: 10px; */
   }
   .i_plus_text > * {
     flex-grow: 1;
@@ -1180,12 +1175,9 @@ footer {
     min-width: 280px;
     box-sizing: border-box;
     margin: 0 auto;
-    box-sizing: border-box;
   }
 
   .afficher-plus {
-    /*   justify-content: start;
-    min-width: 300px;*/
     padding-left: 10px;
     margin-top: -10px;
   }
@@ -1214,7 +1206,6 @@ footer {
   }
 
   .container-all-hebergement-cards {
-    background-color: red;
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -1234,7 +1225,6 @@ footer {
     min-height: 150px;
     box-sizing: border-box;
     margin: 0 auto;
-    box-sizing: border-box;
   }
 
   /************ ACTIVITES ********
@@ -1253,12 +1243,11 @@ footer {
     height: auto;
     margin-left: 0px;
     margin-right: 0px;
-    gap: 10px;
     margin-top: -20px;
+    gap: 10px;
   }
 
   .container-all-activites-cards {
-    background-color: pink;
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -1291,22 +1280,18 @@ footer {
   .all-footer-blocks {
     width: 90%;
   }
+
   footer {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     width: 100%;
     font-size: 0.8em;
+    padding-bottom: 20px;
+    padding-bottom: 1000px;
   }
   .footer-titre-link {
     margin-left: 0px;
     margin-top: 25px;
   }
 }
-
-/* .container-all-hebergement-cards,
-.container-all-populaires-cards,
-.container-all-activites-cards,
-.all-footer-blocks {
-  justify-items: center;
-} */
