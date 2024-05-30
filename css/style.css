@@ -626,7 +626,6 @@ footer {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
-  padding-bottom: 1000px;
 }
 .all-footer-blocks {
   display: flex;
@@ -917,7 +916,6 @@ footer {
     flex-wrap: nowrap;
     width: 100%;
     font-size: 0.8em;
-    padding-bottom: 1000px;
   }
 }
 /************ RESPONSIVE ********
@@ -1288,7 +1286,6 @@ footer {
     width: 100%;
     font-size: 0.8em;
     padding-bottom: 20px;
-    padding-bottom: 1000px;
   }
   .footer-titre-link {
     margin-left: 0px;
