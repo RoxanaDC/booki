@@ -611,6 +611,7 @@ form button form label {
 *********************************/
 
 footer {
+  margin-top: 30px;
   width: 100%;
   background-color: var(--main-bg-color);
   padding-left: 20px;
